@@ -1,0 +1,5 @@
+rootProject.name = 'CatsTrackingRestAPI'
+include 'Infrastructure'
+include 'Application'
+include 'Presentation'
+

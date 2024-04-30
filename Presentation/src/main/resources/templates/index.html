@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task Specifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Lab Task: Adding Spring to the Service</h1>
+    <p>This lab task requires integrating Spring into the service created in a previous lab. The service must provide an HTTP interface (REST API) for accessing information about specific cats and their owners, as well as for retrieving filtered information (e.g., finding all ginger cats).</p>
+
+    <h2>Requirements</h2>
+    <ul>
+        <li>The service must not expose JPA entities through the HTTP interface. Instead, use separate wrapper classes (DTOs).</li>
+        <li>Services and DAOs should become Spring Beans using Dependency Injection (<code>@Autowired</code>).</li>
+        <li>DAOs should extend <code>JpaRepository</code> and utilize templated Spring Data JPA methods.</li>
+    </ul>
+
+    <p>Demonstration of the endpoints' functionality via HTTP requests is required upon submission (using tools such as Postman is recommended).</p>
+
+    <h2>Key Considerations</h2>
+    <p>It's important to adhere to best practices in software development, including separation of concerns by using DTOs for HTTP communications and leveraging Spring's Dependency Injection for managing service and DAO beans. This approach enhances the maintainability and scalability of the service.</p>
+</div>
+</body>
+</html>
